@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        select{
+            width:400px;
+            max-height: 60px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        城市：
+        <select name="" id="s1" onmousedown="if(this.options.length>3){this.size=8}" onblur="this.size=0" onchange="this.size=0"  style="position:absolute;z-index:1;">
+            <option value="1">北京</option>
+            <option value="2">天津</option>
+            <option value="3">广州</option>
+            <option value="4">深圳</option>
+            <option value="5">上海</option>
+        </select>
+    </div>
+    <div>
+        <input type="text" value="222">
+    </div>
+    <hr>
+
+    <div>
+            <select class="my_selected" data-edit-select="1"  onmousedown="if(this.options.length>3){this.size=8}" onblur="this.size=0" onchange="this.size=0"  style="position:absolute;z-index:1;">
+                    <option selected>选择</option>
+                    <option>一</option>
+                    <option>二</option>
+                    <option>三</option>
+                    <option>四</option>
+                    <option>五</option>
+                    <option>六</option>
+                    <option>七</option>
+                    <option>八</option>
+                    <option>九</option>
+                    <option>十</option>
+                    </select>
+    </div>
+
+    <script>
+
+       
+    </script>
+</body>
+</html>

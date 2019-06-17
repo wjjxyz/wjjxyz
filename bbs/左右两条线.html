@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .s1{
+            background: yellow;
+            width:500px;
+            text-align: center;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .s1::before,.s1::after{
+            display: inline-block;
+            content: "";
+            width: 200px;
+			transform:translate(0 50%);
+            color: #fff;
+            height: 0px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="s1">左右两条线</div>
+</body>
+</html>

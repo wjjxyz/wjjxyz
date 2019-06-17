@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #s1{
+            width:400px;
+            height:400px;
+            margin:0 auto;
+        }
+        .d1 {   
+            position: relative;
+            width:400px;
+            height:400px;
+            background:yellow;
+          }
+          .d1:after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 5px;
+            bottom: 5px;
+            left: 49%;
+            background-color: #f00;
+            transition: all 0.35s ease-in-out;
+            transform: scale(0);
+        }
+        #s1:hover .d1:after {
+            transform: scaleX(40);
+        }
+  
+    </style>
+</head>
+<body>
+    <div id="s1">
+         <div class="d1"></div>
+    </div>
+   
+</body>
+</html>
+
+

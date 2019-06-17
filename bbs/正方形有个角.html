@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>demo</title>
+        <style type="text/css">
+            #demo 
+            {
+                width: 100px;
+                height: 100px;
+                background-color: #fff;
+                position: relative;
+                border: 2px solid #000;
+            }
+             
+            #demo:before, #demo:after
+            {
+                 border: solid transparent;
+                content: ' ';
+                height: 0px;
+                width: 0px;
+                left: 100%;
+                position: absolute;
+            }
+            #demo:before {
+                border-width: 12px;
+                border-left-color: #000;
+                top: 18px;
+               
+            }
+             #demo:after
+            {
+                top: 20px;
+                border-width: 10px;
+                border-left-color: #fff;
+            }
+
+            .d1{
+                width:100px;
+                height:100px;
+                border:1px solid red;
+                position: relative;
+            }
+            .d1::after{
+                content: "";
+                width:12px;
+                display:block;
+                height:12px;
+                border:1px solid red;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                background: #fff;
+                position:absolute;
+                left:93px;
+                top:20px;
+                transform: rotate(45deg);
+            }
+            .d2{
+                border: solid red; 
+                border-width: 10px;
+                border-top-color: yellow;
+                height: 0px;
+                width: 0px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="demo">
+
+    </div>
+
+
+    <div class="d1"></div>
+
+
+
+    <div class="d2">
+
+    </div>
+    </body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图片循环旋转</title>
+<style>
+*{margin: 0; padding: 0;}
+
+.ta_c{text-align: center;
+margin-top: 100px;}
+
+@-webkit-keyframes rotation{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+
+.Rotation{
+-webkit-transform: rotate(360deg);
+animation: rotation 3s linear infinite;
+-moz-animation: rotation 3s linear infinite;
+-webkit-animation: rotation 3s linear infinite;
+-o-animation: rotation 3s linear infinite;
+}
+
+.img{border-radius: 250px;}
+
+</style>
+</head>
+<body>
+
+<div class="ta_c">
+<img class="Rotation img" src="img/01.png" width="500" height="500"/>
+</div>
+
+</body>
+</html> -->
